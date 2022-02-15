@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Affine Cipher</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+    <h1>Affine Cipher</h1>
+    <p>Алфавит</p>
+    <input type="text" id="alphabet" value="абвгдеёжзийклмнопрстуфхцчшщъыьэюя">
+    <p>Исходный текст</p>
+        <input type="text" id="sourceText">
+    <p>Зашифрованный текст</p>
+        <input type="text" id="encryptedText">
+    <p>K</p>
+        <input type="text" id="meaningK">
+    <p id="error" class="error">K и размер алфавита должны быть взаимно просты</p>
+    <p>A</p>
+        <input type="text" id="meaningA">
+    <br>
+    <button onclick="Cipher()">Зашифровать</button>
+    <button onclick="deCipher()">Расшифровать</button>
+    <div id="output"></div>
+
+    <img src="images/12345.png">
+
+
+    <script scr="code.js"></script>
+</body>
+</html>

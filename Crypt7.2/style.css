@@ -1,0 +1,33 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+/*#crypted {*/
+/*    margin-right: 30%;*/
+/*}*/
+label {
+    display: block;
+    font-size: 1rem;
+}
+
+input, label {
+    margin: .4rem 0;
+}
+#matrix {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+#functions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#functions > div {
+    display: flex;
+    flex-direction: column;
+}
+span {
+    font-size: 20px;
+    margin-top: 20px;
+}

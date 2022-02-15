@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js"></script>
+</head>
+<body>
+<!--<div id="task">-->
+<!--    <span>Задание</span>-->
+<!--    <img src="img/1.PNG" />-->
+<!--</div>-->
+    <div id="firstCrypt">
+        <div>
+            <label for="stateCount">Количество состояний</label>
+            <textarea id="stateCount" name="stateCount" cols="31" rows="1">2</textarea>
+        </div>
+        <div>
+            <label for="chance">Вероятность</label>
+            <textarea id="chance" name="chance" cols="31" rows="5">0.5</textarea>
+        </div>
+        <button id="btn1" onclick='crypt()'>decipher</button>
+        <span id="1">Результат: </span>
+    </div>
+<div id="Theory">
+    <span>Теория</span>
+    <div id="task">
+        <span>Формула:</span>
+        <img style="width: 500px" src="img/2.PNG"/>
+    </div>
+    <div style="width: 500px">
+        <span>Если состояние системы в точности известно заранее, то ее
+    энтропия равна нулю</span>
+        <br>
+        <br>
+        <span>Максимальное значение энтропии физической системы с
+    конечным числом состояний равно логарифму числа состояний и
+    достигается, когда все состояния равновероятны</span>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+body{
+    font-size: 24pt;
+}
+p.error {
+    display: none;
+}
+p.active {
+    display: block;
+    color: red;
+}
