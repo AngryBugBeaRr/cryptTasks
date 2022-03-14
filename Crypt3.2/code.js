@@ -57,6 +57,7 @@ function crypt () {
                 console.log(Math.log2(1 / massChance[i]));
                 console.log('res: ', massChance[i] * Math.log2(1 / massChance[i]));
             }
+        document.getElementById('1').innerHTML = 'Результат: ' + result;
         } else {
             document.getElementById('1').innerHTML = 'Результат: ';
         }
