@@ -7,49 +7,29 @@
     <script src="code.js"></script>
 </head>
 <body>
+    <div id="inputLength">
+        <label for="engText">Введите длину генерируемого английского текста: </label>
+        <input id="engText" name="secondText" />
+        <button id="btn7" onclick='crypt(7)'>Сгенерировать текста</button>
+        <button id="btn8" onclick='crypt(8)'>Вычислить индекс текстов</button>
+    </div>
     <div id="functions">
         <div id="firstCrypt">
-            <div>
-                <label for="alphabet">Print new alphabet here</label>
-                <textarea id="alphabet" name="alphabet" cols="31" rows="1">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ</textarea>
-            </div>
-            <div>
-                <label for="rusText">Введите длину генерируемого русского текста</label>
-                <input id="rusText" name="text" />
-            </div>
             <button id="btn1" onclick='crypt(1)'>Сгенерировать русский текст</button>
             <button id="btn4" onclick='crypt(4)'>Вычислить индекс русского текста</button>
-            <span id="1">Результат: </span>
+            <span id="1">Случайный русский текст: </span>
             <span id="4">Индекс русского текста: </span>
         </div>
         <div id="secondCrypt">
-            <div>
-                <label for="secondAlphabet">Print new alphabet here</label>
-                <textarea id="secondAlphabet" name="secondAlphabet" cols="33" rows="1">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ
-                </textarea>
-            </div>
-            <div>
-                <label for="engText">Введите длину генерируемого английского текста</label>
-                <input id="engText" name="secondText" />
-            </div>
             <button id="btn2" onclick='crypt(2)'>Сгенерировать английский текст</button>
             <button id="btn5" onclick='crypt(5)'>Вычислить индекс английского текста</button>
-            <span id="2">Результат: </span>
+            <span id="2">Случайный английский текст: </span>
             <span id="5">Индекс английского текста: </span>
         </div>
         <div id="thirdCrypt">
-            <div>
-                <label for="thirdAlphabet">Print new alphabet here</label>
-                <textarea id="thirdAlphabet" name="thirdAlphabet" cols="33" rows="1">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ
-                </textarea>
-            </div>
-            <div>
-                <label for="armText">Введите длину генерируемого английского текста</label>
-                <input id="armText" name="thirdText" />
-            </div>
             <button id="btn3" onclick='crypt(3)'>Сгенерировать армянский текст</button>
             <button id="btn6" onclick='crypt(6)'>Вычислить индекс армянского текста</button>
-            <span id="3">Результат: </span>
+            <span id="3">Случайный армянский текст: </span>
             <span id="6">Индекс армянского текста: </span>
         </div>
     </div>

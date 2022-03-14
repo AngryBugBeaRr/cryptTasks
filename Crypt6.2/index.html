@@ -10,11 +10,11 @@
     <div id="functions">
         <div id="firstCrypt">
             <div>
-                <label for="alphabet">Print new alphabet here</label>
+                <label for="alphabet">Введите первый ключ</label>
                 <textarea id="alphabet" name="alphabet" cols="31" rows="1">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ</textarea>
             </div>
             <div>
-                <label for="text">Print your text here</label>
+                <label for="text">Введите изначальный текст</label>
                 <textarea id="text" name="text" cols="31" rows="5">Рандомный</textarea>
             </div>
             <button id="btn1" onclick='crypt(1)'>decipher</button>
@@ -22,31 +22,31 @@
         </div>
         <div id="secondCrypt">
             <div>
-                <label for="secondAlphabet">Print new alphabet here</label>
+                <label for="secondAlphabet">Введите второй ключ</label>
                 <textarea id="secondAlphabet" name="secondAlphabet" cols="33" rows="1">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ
                 </textarea>
             </div>
             <div>
-                <label for="secondText">Print your text here</label>
-                <textarea id="secondText" name="secondText" cols="33" rows="5">Рандомный</textarea>
+                <label for="secondText">Текст после первоначального кодирования</label>
+                <textarea id="secondText" name="secondText" cols="37" rows="5">Рандомный</textarea>
             </div>
             <button id="btn2" onclick='crypt(2)'>decipher</button>
             <span id="2">Результат: </span>
         </div>
         <div id="thirdCrypt">
             <div>
-                <label for="thirdAlphabet">Print new alphabet here</label>
+                <label for="thirdAlphabet">Общий ключ</label>
                 <textarea id="thirdAlphabet" name="thirdAlphabet" cols="33" rows="1">АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ
                 </textarea>
             </div>
             <div>
-                <label for="thirdText">Print your text here</label>
+                <label for="thirdText">Изначальный текст</label>
                 <textarea id="thirdText" name="thirdText" cols="33" rows="5">Рандомный</textarea>
             </div>
             <button id="btn3" onclick='crypt(3)'>decipher</button>
             <span id="3">Результат: </span>
         </div>
     </div>
-    <button id="add" onclick="createComposition()">Создать композицию алфавитов</button>
+    <button id="add" onclick="createComposition()">Создать общий ключ</button>
 </body>
 </html>

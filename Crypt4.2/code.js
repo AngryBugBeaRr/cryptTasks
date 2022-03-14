@@ -14,7 +14,8 @@ function Cipher () {
         let n = document.getElementById('alphabet').value.length;
         let text = document.getElementById('sourceText').value.toLowerCase();
         let k = document.getElementById('meaningK').value;
-        let a = document.getElementById('meaningA').value;
+        // let a = document.getElementById('meaningA').value;
+        let a = n - 1;
         let alphabet = document.getElementById('alphabet').value;
         let message = document.getElementById('error');
         let encryptedT = "";
@@ -30,6 +31,7 @@ function Cipher () {
                     continue;
                 }
                 let newPos = (parseInt(pos) * k + a) % n;
+                // let newPos = (Math.abs(k - parseInt(pos))) % n;
                 let newC = alphabet.charAt(newPos);
                 encryptedT += newC;
             }
@@ -39,7 +41,8 @@ function Cipher () {
     function deCipher () {
         let n = document.getElementById('alphabet').value.length;
         let k = document.getElementById('meaningK').value;
-        let a = document.getElementById('meaningA').value;
+        // let a = document.getElementById('meaningA').value;
+        let a = n - 1;
         let message = document.getElementById('error');
         if (gcd_two_numbers(+n, +k) === 1) {
             message.classList.remove('active');
