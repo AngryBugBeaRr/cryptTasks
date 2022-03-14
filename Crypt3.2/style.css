@@ -35,3 +35,10 @@ span {
     display: flex;
     flex-direction: column;
 }
+p.error {
+    display: none;
+}
+p.active {
+    display: block;
+    color: red;
+}
